@@ -18,6 +18,8 @@ class Time
   # since 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).
   # Windows uses a file time to record when an application creates, accesses, or writes to a file.
   #
+  # @param timestamp [String | Integer] the number of 100-nanosecond intervals since Windows epoch.
+  # @return [Time] the corresponding local time.
   def self.at_winft(timestamp)
     at((timestamp.to_i + WINFT_OFFSET) / WINFT_MULTIPLIER)
   end

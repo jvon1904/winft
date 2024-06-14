@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    winft (1.0.0)
+    winft (1.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -36,16 +36,19 @@ GEM
     ruby-progressbar (1.13.0)
     strscan (3.1.0)
     unicode-display_width (2.5.0)
+    yard (0.9.36)
 
 PLATFORMS
   arm64-darwin-22
   ruby
 
 DEPENDENCIES
-  minitest (~> 5.16)
-  rake (~> 13.0)
-  rubocop (~> 1.21)
+  bundler
+  minitest
+  rake
+  rubocop
   winft!
+  yard
 
 BUNDLED WITH
    2.5.10
