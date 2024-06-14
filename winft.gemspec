@@ -26,5 +26,9 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.metadata["rubygems_mfa_required"] = "true"
+  spec.metadata = {
+    "rubygems_mfa_required" => "true",
+    "homepage_uri" => spec.homepage,
+    "source_code_uri" => spec.homepage
+  }
 end
