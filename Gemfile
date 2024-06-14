@@ -5,10 +5,10 @@ source "https://rubygems.org"
 # Specify your gem's dependencies in winft.gemspec
 gemspec
 
-group :development, :test do
+group :test, :development do
   gem "bundler"
-  gem "minitest"
-  gem "rake"
-  gem "rubocop"
-  gem "yard"
+  gem "minitest", "~> 5.23.1"
+  gem "rake", "~> 13.2.1"
+  gem "rubocop", "~> 1.64.0"
+  gem "yard", "~> 0.9.36"
 end

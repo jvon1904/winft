@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    winft (1.0.2)
+    winft (1.0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -10,17 +10,17 @@ GEM
     json (2.7.2)
     language_server-protocol (3.17.0.3)
     minitest (5.23.1)
-    parallel (1.24.0)
-    parser (3.3.1.0)
+    parallel (1.25.1)
+    parser (3.3.3.0)
       ast (~> 2.4.1)
       racc
     racc (1.8.0)
     rainbow (3.1.1)
     rake (13.2.1)
     regexp_parser (2.9.2)
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
-    rubocop (1.64.0)
+    rexml (3.3.0)
+      strscan
+    rubocop (1.64.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -41,14 +41,15 @@ GEM
 PLATFORMS
   arm64-darwin-22
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   bundler
-  minitest
-  rake
-  rubocop
+  minitest (~> 5.23.1)
+  rake (~> 13.2.1)
+  rubocop (~> 1.64.0)
   winft!
-  yard
+  yard (~> 0.9.36)
 
 BUNDLED WITH
    2.5.10
